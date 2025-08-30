@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activate Your Capital One Card – capitalone.com/activate</title>
+  <meta name="description" content="Activate your Capital One credit or debit card at capitalone.com/activate. Simple steps to sign in, verify your card, and start using it securely." />
+  <meta name="keywords" content="capitalone.com/activate, Capital One card activation, Capital One sign in, verified capital one, activate capital one credit card 2025" />
+
+  <style>
+    :root{
+      /* Capital One–style palette */
+      --co-navy:#052D6E;
+      --co-blue:#0A4AA6;
+      --co-red:#D0343A;
+      --co-sky:#E9F1FF;
+      --ink:#1a2433;
+      --paper:#ffffff;
+      --bg:#f7f9fc;
+    }
+
+    /* Reset & base */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin:0; padding:0; }
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Layout container for main content */
+    .main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 1rem 4rem;
+    }
+
+    /* Sticky, gradient header */
+    .full-width-header{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      color: #fff;
+      background: linear-gradient(90deg, var(--co-navy), var(--co-blue));
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+    .header-content{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .brand-line{
+      display:flex;
+      align-items:center;
+      gap:.6rem;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing:.2px;
+    }
+    .brand-swoosh{
+      width:18px;height:10px;border-radius:18px/10px;
+      background: var(--co-red);
+      transform: skewX(-20deg);
+      box-shadow: 0 0 0 6px rgba(208,52,58,.18);
+    }
+
+    .cta-group{ display:flex; gap:10px; flex-wrap:wrap; }
+    .header-button{
+      background: #fff;
+      color: var(--co-blue);
+      padding: 10px 16px;
+      border: 2px solid transparent;
+      border-radius: 999px; /* pill */
+      font-weight: 800;
+      font-size: 14.5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .05s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+      white-space: nowrap;
+      box-shadow: 0 2px 0 rgba(0,0,0,.05);
+    }
+    .header-button:hover{ background:#f7fbff; border-color: rgba(208,52,58,.65); box-shadow: 0 6px 16px rgba(0,0,0,.08); }
+    .header-button:active{ transform: translateY(1px); }
+
+    /* Decorative wave divider under header */
+    .wave{
+      height:38px;
+      background: radial-gradient(120% 120% at 50% -20%, rgba(255,255,255,.24) 0%, rgba(255,255,255,0) 60%) ,
+                  linear-gradient(0deg, var(--co-blue), var(--co-blue));
+      mask: radial-gradient(120% 60% at 50% 0%, #000 55%, transparent 56%);
+      -webkit-mask: radial-gradient(120% 60% at 50% 0%, #000 55%, transparent 56%);
+    }
+
+    /* Headings & text */
+    h1, h2, h3, h4{
+      color: var(--co-navy);
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 2rem 0 1rem;
+    }
+    h1{
+      text-align:center;
+      margin-top: 2.4rem;
+      font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+      color: var(--co-navy);
+    }
+    .lead{
+      text-align:center;
+      margin: .25rem auto 1.5rem;
+      max-width: 780px;
+      color:#2b3d60;
+      font-size:1.05rem;
+    }
+
+    /* Info chips under H1 */
+    .chips{
+      display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom: 1.25rem;
+    }
+    .chip{
+      background: var(--co-sky);
+      border:1px solid #d9e7f6;
+      color:#083a7a;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:.92rem;
+      font-weight:600;
+    }
+
+    /* Primary CTA button in content */
+    .btn-primary{
+      display: inline-block;
+      background: var(--co-navy);
+      color:#fff;
+      padding:.85rem 1.5rem;
+      border-radius: 12px;
+      font-size:1.05rem;
+      font-weight:800;
+      text-decoration:none;
+      text-align:center;
+      transition: transform .05s ease, box-shadow .25s ease, background .25s ease;
+      border:2px solid var(--co-red);
+      box-shadow: 0 10px 24px rgba(5,45,110,.18);
+    }
+    .btn-wrap{ text-align:center; margin: 1.6rem 0 2.1rem; }
+    .btn-primary:hover{ background:#042458; box-shadow: 0 14px 32px rgba(5,45,110,.23); }
+    .btn-primary:active{ transform: translateY(1px); }
+
+    /* Card sections */
+    .card{
+      background: var(--paper);
+      border:1px solid #e7eef7;
+      border-radius: 14px;
+      padding: 18px 16px;
+      box-shadow: 0 2px 0 rgba(0,0,0,.02);
+      margin: 1.2rem 0;
+    }
+    .card h2{
+      background: linear-gradient(90deg, #eaf2ff, transparent);
+      border-left:6px solid var(--co-red);
+      padding: .55rem .6rem .55rem .75rem;
+      margin: 0 0 1rem;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      color:#083a7a;
+    }
+    .card h3{ color:#0A4AA6; font-size:1.2rem; margin-top:1rem; }
+
+    p{ margin:.9rem 0; font-size:1.03rem; }
+    ul, ol{ margin: .75rem 0 .9rem 1.25rem; }
+    li{ margin-bottom:.5rem; }
+
+    /* Nice list ticks */
+    .tick-list{ list-style:none; padding-left:0; }
+    .tick-list li{
+      position:relative; padding-left:28px;
+    }
+    .tick-list li::before{
+      content:"";
+      position:absolute; left:0; top:.2rem;
+      width:18px;height:18px;border-radius:999px;
+      background: conic-gradient(from 180deg at 50% 50%, var(--co-red), #ff8b92 60%, var(--co-red));
+      box-shadow: inset 0 0 0 3px #fff, 0 0 0 1px rgba(0,0,0,.06);
+    }
+
+    /* Note / disclaimer */
+    .note{
+      background: #fff;
+      border: 1px solid #e6eef7;
+      border-left: 6px solid var(--co-red);
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: #172b4d;
+      margin: 1rem 0 2rem 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+      font-size: .98rem;
+    }
+
+    /* Footer */
+    .site-footer{
+      background: linear-gradient(90deg, var(--co-navy), var(--co-blue));
+      color:#fff;
+      text-align:center;
+      padding: 1.1rem 0;
+      font-size:.95rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 820px){
+      .brand-line{ width:100%; justify-content:center; }
+      .cta-group{ justify-content:center; width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Gradient Header -->
+  <div class="full-width-header" role="banner">
+    <div class="header-content">
+      <div class="brand-line" aria-label="Site identity">
+        <span class="brand-swoosh" aria-hidden="true"></span>
+        Capital One • Activate • Sign In • Make a Payment
+      </div>
+
+      <nav class="cta-group" aria-label="Primary navigation">
+        <a class="header-button" href="https://capital-one-card-creditcenter.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" aria-label="Activate your Capital One card">
+          Activate Capital One Card
+        </a>
+        <a class="header-button" href="https://verified.capitalone.com/" target="_blank" rel="noopener noreferrer" aria-label="Capital One sign in (verified)">
+          Capital One Sign In
+        </a>
+        <a class="header-button" href="https://capital-one-card-creditcenter.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" aria-label="Make a payment or manage your Capital One account">
+          Make a Payment
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="wave" aria-hidden="true"></div>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <h1>Activate Your Capital One Card – <span style="white-space:nowrap;">capitalone.com/activate</span></h1>
+    <p class="lead">Use the official Capital One activation portal to verify your identity, link your new card, and start using it securely—online or in-store.</p>
+
+    <div class="chips" aria-label="Popular intents">
+      <span class="chip">Capital One Card Activation</span>
+      <span class="chip">Capital One Sign In</span>
+      <span class="chip">Manage Payments</span>
+    </div>
+
+    <div class="btn-wrap">
+      <a href="https://capital-one-card-creditcenter.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Activate your Capital One card now">
+        Activate Card Now
+      </a>
+    </div>
+
+    <div class="note" role="note">
+      <strong>Important:</strong> Have your Capital One card and personal details ready. You may be asked to confirm your identity with a one-time verification code.
+    </div>
+
+    <section class="card" aria-labelledby="howto">
+      <h2 id="howto">How to Activate Your Capital One Card (Step-by-Step)</h2>
+
+      <h3>1) Go to the Official Activation Page</h3>
+      <p>Open <strong>capitalone.com/activate</strong>. You’ll be directed to Capital One’s secure activation flow.</p>
+
+      <h3>2) Sign In or Create an Account</h3>
+      <p>Use your Capital One username and password. New customer? Create an account with a strong password and updated recovery options.</p>
+
+      <h3>3) Enter Your Card Details</h3>
+      <p>Provide your card information exactly as it appears. Accuracy helps prevent activation errors.</p>
+
+      <h3>4) Verify Your Identity</h3>
+      <p>Capital One may send a verification code via text, call, or email. Enter the code to confirm it’s you.</p>
+
+      <h3>5) Complete Activation</h3>
+      <p>Follow the prompts to finish. You’ll see a confirmation message when your card is ready to use.</p>
+    </section>
+
+    <section class="card" aria-labelledby="after">
+      <h2 id="after">After Activation: What You Can Do</h2>
+      <ul class="tick-list">
+        <li><strong>Set Up Payments:</strong> Manage autopay, due dates, and alerts.</li>
+        <li><strong>Monitor Activity:</strong> Track transactions and enable notifications.</li>
+        <li><strong>Card Controls:</strong> Lock/unlock your card, request a replacement, or add authorized users.</li>
+        <li><strong>Rewards & Benefits:</strong> View rewards balance and explore cardholder perks.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="links">
+      <h2 id="links">Quick Links</h2>
+      <ul>
+        <li><a href="https://www.capitalone.com/activate/" target="_blank" rel="noopener noreferrer">Activate (capitalone.com/activate)</a></li>
+        <li><a href="https://verified.capitalone.com/" target="_blank" rel="noopener noreferrer">Capital One Sign In (verified.capitalone.com)</a></li>
+        <li><a href="https://www.capitalone.com/credit-cards/online-account-access/" target="_blank" rel="noopener noreferrer">Account Access & Payments</a></li>
+      </ul>
+    </section>
+
+    <div class="note" role="note" aria-label="Disclaimer">
+      <strong>Disclaimer:</strong> This site is an independent knowledge-base guide and is <em>not</em> affiliated with, endorsed by, or sponsored by Capital One. Do <u>not</u> enter your card or personal details on this page. For official activation and support, use Capital One’s websites linked above.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p>Capital One Card • Activate at capitalone.com/activate • Sign In • Manage Payments</p>
+  </footer>
+</body>
+</html>
