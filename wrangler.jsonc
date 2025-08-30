@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/master/wrangler/wrangler.schema.json",
+  "name": "my-static-site",
+  "compatibility_date": "2025-08-30",
+  "assets": {
+    "directory": "./"
+  }
+}
